@@ -6,4 +6,42 @@
 
 :root {
     --white-color:#fff;
+    --body-background:#070c15;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--body-background);
+}
+
+.imgBox {
+    position: relative;
+    width: 442px;
+    height: 500px;
+}
+
+.imgBox textarea {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background: url(assets/img4.png) ;
+    resize: none;
+    outline: none;
+    border: none;
+    opacity: 0.4;
+    filter: grayscale(1);
+}
+
+.imgBox textarea:nth-child(2) {
+    opacity: 1;
+    filter: grayscale(0);
+    width: 150px;
+    border-right: 2px solid var(--white-color);
+    resize: horizontal;
 }
